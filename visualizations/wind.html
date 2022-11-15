@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Add a title here -->
+    <title>Wind Speed</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
 
     <!-- Our own CSS stylesheet -->
@@ -19,8 +20,9 @@
 
   <body>
     <!-- Start of navbar -->
+    <!-- Start of navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Latitude</a>
+      <a class="navbar-brand" href="../index.html">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,29 +34,55 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-              <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="visualizations/wind.html">Windspeed</a>
+              <a class="dropdown-item" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind.html">Windspeed</a>
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../comparison.html">Comparison<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
+            <a class="nav-link" href="../data.html">Data</a>
           </li>
         </ul>
       </div>
     </nav>
     <!-- End of navbar -->
 
+
+
     <!-- Start of container -->
 
-          <!-- Start of Visualizations imageNav Area -->
-          <!-- End of the Visualizations imageNav Area -->
+    <div class="container">
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Latitude vs. Wind Speed</h1>
+        </div>
+      </div>
+  
+
+      <!-- Start of Visualizations imageNav Area -->
+        <div class="row">
+          <div class="col-md-6">
+              <img src="../assets/images/Fig4.png" alt = "wind" />
+          </div>
+        </div>
+
+      <!-- End of the Visualizations imageNav Area -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>This page contains analyses describing changes in weather relative to proximity to the equator. These analyses were conducted using a dataset on over 500 cities, obtained using the OpenWeatherMap API.</p>
+            <p>After assembling the dataset, Matplotlib was used to examine various aspects of weather vs. latitude. Namely, maximum temperature, cloudiness, and windspeed were examined. This site provides the visualizations of each of these analyses, as well as a description of any trends observed. </p>
+          </div>
+        </div>
 
     <!-- End of container -->
+     </div>
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
