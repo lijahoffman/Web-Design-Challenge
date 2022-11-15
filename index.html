@@ -9,19 +9,186 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    
+    
+    
 
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <!-- <link rel="stylesheet" href="assets/css/styles.css" media="screen"> -->
+   
+   
+  
+
+
+</head>
+
+  
 
   </head>
 
   <body>
-    <!-- Start of navbar -->
+    <!-- Start of navbar --> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+              <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="visualizations/wind.html">Windspeed</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="comparison.html">Comparison<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+   
+
+
+
+
+    <!-- <a class="dropdown-item" href="assets/images/Fig1.png">Max Temperature</a>
+    <a class="dropdown-item" href="assets/images/Fig2.png">Humidity</a>
+    <a class="dropdown-item" href="assets/images/Fig3.png">Cloudiness</a>
+    <a class="dropdown-item" href="assets/images/Fig4.png">Windspeed</a> -->
+  
+
+    
+
+
+
+  
+
     <!-- End of navbar -->
 
     <!-- Start of container -->
+    <div class="container">
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Latitude vs. X</h1>
+        </div>
+      </div>
+  
+      <!-- Row 2 -->
+
+      <div class="container">
+        <!--Normally these medium columns go full wide on small screen sizes-->
+        <div class="row">
+          <div class="col-md-6">
+              <img width = 375px src="assets/images/Fig1.png">
+          </div>
+          <div class="col-md-6">
+               <p>This page contains analyses describing changes in weather relative to proximity to the equator. These analyses were conducted using a dataset on over 500 cities, obtained using the OpenWeatherMap API.</p>
+               <p>After assembling the dataset, Matplotlib was used to examine various aspects of weather vs. latitude. Namely, maximum temperature, cloudiness, and windspeed were examined. This site provides the visualizations of each of these analyses, as well as a description of any trends observed. </p>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Visualtions</h1>
+          </div>
+        </div>
+
+
+        <!-- Row 3 -->
+        <div class="row">
+          <div class="col-md-6">
+           <a target="_blank" href="visualizations/temp.html">
+              <img width = 300px src="assets/images/Fig1.png">
+           </a>
+          </div>
+          <div class="col-md-6">
+           <a target="_blank" href="visualizations/humidity.html">
+             <img width = 300px src="assets/images/Fig2.png">
+           </a>
+          </div>
+          <div class="col-md-6">
+           <a target="_blank" href="visualizations/cloudiness.html">
+             <img width = 300px src="assets/images/Fig3.png">
+           </a>
+          </div>
+          <div class="col-md-6">
+           <a target="_blank" href="visualizations/wind.html">
+            <img width = 300px src="assets/images/Fig4.png">
+           </a>
+          </div>
+        </div>
+
+
+      </div>
+        
+      <!-- <div class="row">
+        <div class="col-md-6">
+            <div class = "float left"><img width = 400 src="assets/images/Fig1.png" class = "float left"></div>
+            <div class = "float left">This page contains analyses describing changes in weather relative to proximity to the equator. These analyses were conducted using a dataset on over 500 cities, obtained using the OpenWeatherMap API.</div>
+        </div> -->
+
+        <!-- <div class="col-sml-12 col-md-3">
+          <p> This page contains analyses describing changes in weather relative to proximity to the equator. These analyses were conducted using a dataset on over 500 cities, obtained using the OpenWeatherMap API. </p>
+        </div> -->
+      
+  
+      <!-- Row 3
+      <div class="row">
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        </div>
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        </div>
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        </div>
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        </div>
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        </div>
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        </div>
+      </div>
+  
+      <!-- Row 4 -->
+      <!-- <div class="row">
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo voluptates blanditiis nisi! Ullam dolore aspernatur, ratione error similique veniam iusto, labore repellat eaque nostrum optio doloribus illo nihil dolor?</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p>
+        </div>
+      </div> --> 
+    </div>
+  
+
+
           <!-- Start of Visualizations imageNav Area -->
+
+
+
+
           <!-- End of the Visualizations imageNav Area -->
     <!-- End of container -->
 
