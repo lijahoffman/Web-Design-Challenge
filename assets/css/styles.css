@@ -46,7 +46,7 @@ tbody td {
 }
 
 
-.media {
+@media {
   position: relative;
   display: inline-block;
   }
